@@ -14,11 +14,13 @@ body {
 /* header */
 
 header {
+    max-width: 1440px;
     background-color: white;
-    width: 1440px;
-    padding-left: 50px;
+    
     margin: auto;
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .logo {
@@ -27,7 +29,8 @@ header {
     height: 29px;
 }
 
-.nav-bar {
+.nav-bar{
+    width: 93%;
     display: flex;
     justify-content: space-between;
 
@@ -76,7 +79,7 @@ header {
 }
 
 .title h1 {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 700;
 
 }
@@ -89,7 +92,9 @@ header {
 
 /* ----barre de recherche / filtres---- */
 
-
+.recherche {
+    width: 93%;
+}
 
 .barre-recherche form {
     width: auto;
@@ -159,6 +164,7 @@ header {
 
 
 .filtres {
+    width: 100%;
     margin-top: 30px;
 
     display: flex;
@@ -225,6 +231,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -233,22 +240,24 @@ header {
 /* --------content---------- */
 
 .content {
-    width: 1440px; /* la maquette fait 1440px de largeur*/
-
+    max-width: 1440px; /* la maquette fait 1440px de largeur*/
     margin: auto;
-    padding: 37px 50px 0 50px;
+    padding-top: 30px;
     
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: row wrap;
     background-color: white;
 }
 
 main {
+    width: 100%;
+
+    margin: 0 50px 0 50px;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-flow: row nowrap;
     
 }
 
@@ -256,20 +265,44 @@ main {
 /* -------Héberement ------------*/
 
 .hebergement {
-    width: 880px;
+    width: 65%;
     
-    padding: 40px;
+    padding: 42px 20px 46px 20px;
     border-radius: 15px;
     background-color: #F2F2F2;
     
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+ 
+    
+}
+
+.hebergement a {
+    width: 30%;
+    min-width: 198px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.carte-hebergement {
+    width: 100%;
+    height: 200px;
+    
+    
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .img-hebergement {
-    width: 245px;
-    height: 120px;
+    width: 100%;
+    height: 60%;
 
     border: solid 5px white;
     border-radius: 15px 15px 0 0;
@@ -281,29 +314,18 @@ main {
 
 .hebergement h2 {
     width: 100%;
-    margin: 0 0 22px 0;
+    margin: 0 0 22px 15px;
 }
 
-.hebergement a {
-    text-decoration: none;
-    color: black;
-}
+
 
 .view-more {
     width: 100%;
     cursor: pointer;
+    margin-left: 15px;
 }
 
-.carte-hebergement {
-    width: 245px;
-    height: 200px;
-    
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-}
+
 
 .carte-hebergement p, h3 {
     margin: 0;
@@ -320,7 +342,7 @@ main {
 }
 
 .item-hebergement {
-    width: 245px;
+    width: 100%;
 }
 
 .description {
@@ -343,32 +365,39 @@ main {
 /* ---------- Les plus populaires--------------*/
 
 .populaire {
-    width: 420px;
-
-    background-color: #F2F2F2;
-    padding: 40px 40px 4px 40px;
-    border-radius: 15px;
+    width: 32%;
     
+    background-color: #F2F2F2;
+    
+    padding: 42px 20px 45px 20px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .populaire a {
+    width: 93%;
+    min-width: 280px;
+
+    margin-top: 24px;
     text-decoration: none;
     color: black;
 }
 
 .populaire h3 {
     font-size: 22px;
-    margin-bottom: 26px;
 }
 
 .carte-populaire {
-    width: 340px;
+    width: 100%;
     height: 145px;
 
-    padding: 0 22px 0 0;
     border: solid 5px white;
     border-radius: 15px;
-    margin-bottom: 30px;
     background-color: white;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 
@@ -380,7 +409,7 @@ main {
 }
 .img-populaire {
     height: 100%;
-    width: 135px;
+    width: 35%;
 
     display: flex;
     justify-content: center;
@@ -397,8 +426,9 @@ main {
 }
 
 .description-populaire {
-    padding: 16px 0 0 15px;
-    max-width: 160px;
+    width: 65%;
+    padding: 16px 0 0 16px;
+
 }
 
 .description-populaire h3 {
@@ -412,7 +442,7 @@ main {
 }
 
 .score-populaire {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 16px;
 }
 
 .score img, .score-populaire img {
@@ -425,6 +455,9 @@ main {
 /* activités*/
 
 .activites {
+    width: 100%;
+
+    padding: 0 50px 0 50px;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -432,8 +465,22 @@ main {
 }
 
 .activites a {
+    width: 21%;
+    max-height: 440px;
+
+
     text-decoration: none;
     color: black;
+}
+
+.carte-activite {
+    width: 100%;
+    max-height: 100%;
+ 
+    border-radius: 25px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
 }
 
 .activites h3 {
@@ -441,18 +488,7 @@ main {
     margin: 0 0 19px 0;
 }
 
-.carte-activite {
-    width: 300px;
-    height: 440px;
- 
-    border-radius: 25px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative;
 
-    
-
-}
 .card-img {
     width: 100%;
     height: 440px;
@@ -474,7 +510,7 @@ main {
 .activite-description {
     position: absolute;
     bottom: 0;
-    width: 300px;
+    width: 100%;
     height: 55px;
     display: flex;
     align-items: center;
@@ -488,7 +524,7 @@ main {
 }
 
 footer {
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 50px 0 50px;
     margin: auto;;
     background-color: white;
@@ -534,7 +570,7 @@ footer a {
 }
 
 
-/*@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     body {
         display: none;
     }
@@ -542,4 +578,4 @@ footer a {
 
 @media screen and (max-width: 768px) {
 
-}*/
+}
