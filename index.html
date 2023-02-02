@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Booki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/booki.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="./images/svg/Logo.svg" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <div class="nav-item"><a href="#">Hébergement</a></div>
+                <div class="nav-item"><a href="#">Activités</a></div>
+            </div>
+        </nav>
+        <div class="recherche">
+            <div class="title">
+                <h1>Trouvez votre hébergement pour vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <div class="barre-recherche">
+                <form action="/recherche" method="post">
+                    <label for="search"><img src="./images/svg/map.svg" alt="map-marc"></label>
+                    <input type="text" place="Marseille, France" name="search">
+                    <button type="submit" disabled><i class="fa fa-search"></i><span>Recherche</span></button>
+                </form>
+            </div>
+            <nav class="filtres">
+                <h3>Filtres</h3>
+                
+                    <div class="filtre">
+                        <img src="./images/svg/economique.svg" alt="icon-eco">
+                        Économique
+                    </div>
+                    <div class="filtre">
+                        <img src="./images/svg/familial.svg" alt="icon-familial">
+                        Familial
+                    </div>
+                    <div class="filtre">
+                        <img src="./images/svg/romantique.svg" alt="icon-romantique">
+                        Romantique
+                    </div>
+                    <div class="filtre">
+                        <img src="./images/svg/animeaux.svg" alt="icon-animeaux">
+                        Animeaux autorisés
+                    </div>
+                
+            </nav>
+            <div class="result">
+                <div class="info"><img src="./images/svg/info.svg" alt="icon-info"></div>
+                <p>Plus de 500 logement sont disponibles dans cette ville</p>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <main>
+            <section class="hebergement">
+                <h2>Hébergement à Marseille</h2>
+                <a href="#">
+                    <div class="carte-hebergement">
+                        <img srcset="
+                                    ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3200w,
+                                    ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w,
+                                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 992w,
+                                    ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 768w"
+                        
+                        src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-hebergement">
+                        <div class="description">
+                            <h3 class="card-title">Auberge La Canebière</h3>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                        </div>
+                        <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="carte-hebergement">
+                        <img srcset="
+                                    ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3200w,
+                                    ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w,
+                                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 992w,
+                                    ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 768w"
+                        
+                        src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-hebergement">
+                        <div class="description">
+                            <h3 class="card-title">Auberge La Canebière</h3>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                        </div>
+                        <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="carte-hebergement">
+                        <img srcset="
+                                    ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3200w,
+                                    ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w,
+                                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 992w,
+                                    ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 768w"
+                        
+                        src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-hebergement">
+                        <div class="description">
+                            <h3 class="card-title">Auberge La Canebière</h3>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                        </div>
+                        <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="carte-hebergement">
+                        <img srcset="
+                                    ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3200w,
+                                    ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w,
+                                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 992w,
+                                    ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 768w"
+                        
+                        src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-hebergement">
+                        <div class="description">
+                            <h3 class="card-title">Auberge La Canebière</h3>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                        </div>
+                        <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="carte-hebergement">
+                        <img srcset="
+                                    ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3200w,
+                                    ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w,
+                                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 992w,
+                                    ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 768w"
+                        
+                        src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-hebergement">
+                        <div class="description">
+                            <h3 class="card-title">Auberge La Canebière</h3>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                        </div>
+                        <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="carte-hebergement">
+                        <img srcset="
+                                    ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3200w,
+                                    ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w,
+                                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 992w,
+                                    ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 768w"
+                        
+                        src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-hebergement">
+                        <div class="description">
+                            <h3 class="card-title">Auberge La Canebière</h3>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                        </div>
+                        <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                    </div>
+                </a>
+                <div class="view-more"><h3>Afficher plus</h3></div>
+            </section>
+            <section class="populaire">
+                <h3>Les plus populaires</h3>
+                <div class="carte-populaire">
+                    <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-populaire">
+                    <div class="description-populaire">
+                        <h3 class="card-title">Auberge La Canebière</h3>
+                        <p class="card-text">Nuit à partir de 25€</p>
+                    </div>
+                    <div class="score-populaire"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                </div>
+                <div class="carte-populaire">
+                    <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-populaire">
+                    <div class="description-populaire">
+                        <h3 class="card-title">Auberge La Canebière</h3>
+                        <p class="card-text">Nuit à partir de 25€</p>
+                    </div>
+                    <div class="score-populaire"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                </div>
+                <div class="carte-populaire">
+                    <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" class="item-populaire">
+                    <div class="description-populaire">
+                        <h3 class="card-title">Auberge La Canebière</h3>
+                        <p class="card-text">Nuit à partir de 25€</p>
+                    </div>
+                    <div class="score-populaire"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"></div>
+                </div>
+            </section>
+        </main>
+
+
+        <article class="activites">
+            <h3>Activités à Marseille</h3>
+            <div class="carte-activite">
+                <div class="card-img"><img srcset="
+                        ./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3200w,
+                        ./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1400w,
+                        ./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 992w,
+                        ./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 768w"
+                    src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                </div>
+                <div class="activite-description">
+                    <h3>Vieux-port</h3>
+                </div>
+            </div>
+            <div class="carte-activite">
+                <div class="card-img"><img srcset="
+                        ./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 3200w,
+                        ./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1400w,
+                        ./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 992w,
+                        ./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 768w"
+                    src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                </div>
+                <div class="activite-description">
+                    <h3>Vieux-port</h3>
+                </div>
+            </div>
+            <div class="carte-activite">
+                <div class="card-img"><img srcset="
+                        ./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3200w,
+                        ./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1400w,
+                        ./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 992w,
+                        ./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 768w"
+                    src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                </div>
+                <div class="activite-description">
+                    <h3>Vieux-port</h3>
+                </div>
+            </div>
+            <div class="carte-activite">
+                <div class="card-img"><img srcset="
+                        ./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 3200w,
+                        ./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 1400w,
+                        ./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 992w,
+                        ./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 768w"
+                    src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                </div>
+                <div class="activite-description">
+                    <h3>Vieux-port</h3>
+                </div>
+            </div>
+        </article>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="apropos">
+                <h3>À propos</h3>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Condition générales</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </div>
+        
+            <div class="nos-hebergements">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
+            </div>
+            
+            <div class="assistance">
+                <h3>Assistance</h3>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
