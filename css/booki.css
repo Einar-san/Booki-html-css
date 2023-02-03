@@ -30,11 +30,12 @@ header {
 }
 
 .nav-bar{
-    width: 93%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 53px;
+
+    margin: 0 0 53px 50px;
     padding-right: 20px;
 }
 
@@ -93,7 +94,8 @@ header {
 /* ----barre de recherche / filtres---- */
 
 .recherche {
-    width: 93%;
+    width: 100%;
+    margin: 0 0 0 50px;
 }
 
 .barre-recherche form {
@@ -280,7 +282,7 @@ main {
 
 .hebergement a {
     width: 30%;
-    min-width: 198px;
+    min-width: 245px;
     height: 200px;
     margin-bottom: 30px;
     margin-right: 10px;
@@ -466,6 +468,7 @@ main {
 
 .activites a {
     width: 21%;
+    
     max-height: 440px;
 
 
