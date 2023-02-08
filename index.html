@@ -13,11 +13,13 @@
                 <a href="#"><img src="./images/svg/Logo.svg" alt="logo"></a>
             </div>
             <div class="menu">
-                <div class="nav-item"><a href="#hebergement">Hébergement</a></div>
-                <div class="nav-item"><a href="#activite">Activités</a></div>
+                <a href="#hebergement">Hébergement</a>
+                <a href="#activite">Activités</a>
             </div>
         </nav>
-        <div class="recherche">
+    </header>
+    <main>
+        <section class="recherche">
             <div class="title">
                 <h1>Trouvez votre hébergement pour vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
@@ -54,15 +56,13 @@
                 <div class="info"><img src="./images/svg/info.svg" alt="icon-info"></div>
                 <p>Plus de 500 logement sont disponibles dans cette ville</p>
             </div>
-        </div>
-    </header>
-    <div class="content">
-        <main>
+        </section>
+        <section class="content">
             <section class="hebergement" id="hebergement">
                 <h2>Hébergement à Marseille</h2>
                 <div class="cartes">
                     <a href="#">
-                        <div class="carte-hebergement">
+                        <article class="carte-hebergement">
                             <div class="img-hebergement">
                                 <img srcset="
                                             ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3200w,
@@ -77,10 +77,10 @@
                                 <p class="card-text">Nuit à partir de 25€</p>
                             </div>
                             <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                        </div>
+                        </article>
                     </a>
                     <a href="#">
-                        <div class="carte-hebergement">
+                        <article class="carte-hebergement">
                             <div class="img-hebergement">
                                 <img srcset="
                                             ./images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3200w,
@@ -95,10 +95,10 @@
                                 <p class="card-text">Nuit à partir de 52€</p>
                             </div>
                             <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                        </div>
+                        </article>
                     </a>
                     <a href="#">
-                        <div class="carte-hebergement">
+                        <article class="carte-hebergement">
                             <div class="img-hebergement">
                                 <img srcset="
                                             ./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 3200w,
@@ -113,10 +113,10 @@
                                 <p class="card-text">Nuit à partir de 76€</p>
                             </div>
                             <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                        </div>
+                        </article>
                     </a>
                     <a href="#">
-                        <div class="carte-hebergement">
+                        <article class="carte-hebergement">
                             <div class="img-hebergement">
                                 <img srcset="
                                             ./images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 3200w,
@@ -131,10 +131,10 @@
                                 <p class="card-text">Nuit à partir de 46€</p>
                             </div>
                             <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                        </div>
+                        </article>
                     </a>
                     <a href="#">
-                        <div class="carte-hebergement">
+                        <article class="carte-hebergement">
                             <div class="img-hebergement">
                                 <img srcset="
                                             ./images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 3200w,
@@ -149,10 +149,10 @@
                                 <p class="card-text">Nuit à partir de 23€</p>
                             </div>
                             <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                        </div>
+                        </article>
                     </a>
                     <a href="#">
-                        <div class="carte-hebergement">
+                        <article class="carte-hebergement">
                             <div class="img-hebergement">
                                 <img srcset="
                                             ./images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3200w,
@@ -167,15 +167,15 @@
                                 <p class="card-text">Nuit à partir de 96€</p>
                             </div>
                             <div class="score"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                        </div>
+                        </article>
                     </a>
                 </div>
                 <div class="view-more"><h3>Afficher plus</h3></div>
             </section>
             <section class="populaire">
-                <h3>Les plus populaires</h3>
+                <div class="populaire-title"><h3>Les plus populaires</h3><img src="./images/svg/populaire.svg" alt="icon-graphique" /></div>
                 <a href="#">
-                    <div class="carte-populaire">
+                    <article class="carte-populaire">
                         <div class="img-populaire">
                             <img srcset="
                                         ./images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 3200w,
@@ -190,10 +190,10 @@
                             <p class="card-text">Nuit à partir de 128€</p>
                         </div>
                         <div class="score-populaire"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                    </div>
+                    </article>
                 </a>
                 <a href="#">
-                    <div class="carte-populaire">
+                    <article class="carte-populaire">
                         <div class="img-populaire">
                             <img srcset="
                                         ./images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 3200w,
@@ -208,10 +208,10 @@
                             <p class="card-text">Nuit à partir de 71€</p>
                         </div>
                         <div class="score-populaire"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                    </div>
+                    </article>
                 </a>
                 <a href="#">
-                    <div class="carte-populaire">
+                    <article class="carte-populaire">
                         <div class="img-populaire">
                             <img srcset="
                                         ./images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 3200w,
@@ -226,16 +226,17 @@
                             <p class="card-text">Nuit à partir de 68€</p>
                         </div>
                         <div class="score-populaire"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/score.svg"><img src="./images/svg/badScore.svg"></div>
-                    </div>
+                    </article>
                 </a>
+                <div class="blank"></div>
             </section>
-        </main>
+        </section>
 
 
-        <article class="activites" id="activite">
+        <section class="activites" id="activite">
             <h3>Activités à Marseille</h3>
             <a href="#">
-                <div class="carte-activite">
+                <article class="carte-activite">
                     <div class="card-img"><img srcset="
                             ./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3200w,
                             ./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1400w,
@@ -246,10 +247,10 @@
                     <div class="activite-description">
                         <h3>Vieux-port</h3>
                     </div>
-                </div>
+                </article>
             </a>
             <a href="#">
-                <div class="carte-activite">
+                <article class="carte-activite">
                     <div class="card-img"><img srcset="
                             ./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 3200w,
                             ./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1400w,
@@ -260,10 +261,10 @@
                     <div class="activite-description">
                         <h3>Fort de Pomègues</h3>
                     </div>
-                </div>
+                </article>
             </a>
             <a href="#">
-                <div class="carte-activite">
+                <article class="carte-activite">
                     <div class="card-img"><img srcset="
                             ./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3200w,
                             ./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1400w,
@@ -274,10 +275,10 @@
                     <div class="activite-description">
                         <h3>Parc national des Calanques</h3>
                     </div>
-                </div>
+                </article>
             </a>
             <a href="#">
-                <div class="carte-activite">
+                <article class="carte-activite">
                     <div class="card-img"><img srcset="
                             ./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 3200w,
                             ./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 1400w,
@@ -288,10 +289,10 @@
                     <div class="activite-description">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
-                </div>
+                </article>
             </a>
-        </article>
-    </div>
+        </section>
+    </main>
     
     <footer>
         <div class="footer-content">

@@ -6,7 +6,7 @@
 
 body {
 
-    background-color: #F0F2F6;
+    background-color: white;
     margin: 0;
     font-family: 'raleway', sans-serif;
 }
@@ -18,15 +18,6 @@ header {
     background-color: white;
     
     margin: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.logo {
-    padding-top: 44px;
-    width: 61px;
-    height: 29px;
 }
 
 .nav-bar{
@@ -34,9 +25,13 @@ header {
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 20px;
-    padding-left:  50px;
-    padding-right: 20px;
+    padding:0 30px 20px 30px;
+}
+
+.logo {
+    padding-top: 44px;
+    width: 61px;
+    height: 29px;
 }
 
 .menu {
@@ -47,27 +42,26 @@ header {
     flex-wrap: nowrap;
 }
 
-.nav-item {
+
+.menu a {
+    display: block;
     width: 162px;
 
     padding-top: 48px;
 
     text-align: center;
-
-}
-
-.nav-item a {
     text-decoration: none;
     color: black;
 }
 
-.nav-item a:focus {
+.menu a:hover {
     color: #0065FC;
+    border-top: solid #0065FC;
+    padding: 45px 0 0 0;
 }
 
-.nav-item:focus-within {
-    border-top: solid #0065FC;
-    padding-top: 45px;
+.nav-item a:hover ~ .nav-item {
+    
 }
 
 .title {
@@ -91,11 +85,25 @@ header {
 
 
 
+/* --------main---------- */
+
+main {
+    max-width: 1440px; /* la maquette fait 1440px de largeur*/
+    margin: auto;
+    padding: 30px 30px 0 30px;
+
+    
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+
 /* ----barre de recherche / filtres---- */
 
 .recherche {
     width: 100%;
-    padding: 0 0 0 50px;
+    margin: 30px 0 0 0;
 }
 
 .barre-recherche form {
@@ -141,7 +149,7 @@ header {
 
 .barre-recherche form button {
     width: 128px;
-    height: 100%;
+    height: 96%;
 
     display: inline-block;
     
@@ -162,6 +170,7 @@ header {
 
 .barre-recherche form button i {
     display: none;
+    
 }
 
 
@@ -236,26 +245,14 @@ header {
     
 }
 
+/*----------content----------------*/
 
 
-
-/* --------content---------- */
 
 .content {
-    max-width: 1440px; /* la maquette fait 1440px de largeur*/
-    margin: auto;
-    padding-top: 30px;
-    
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    background-color: white;
-}
-
-main {
     width: 100%;
 
-    margin: 0 50px 0 50px;
+    margin: 30px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -269,7 +266,7 @@ main {
 .hebergement {
     width: 65%;
     
-    padding: 42px 40px 46px 40px;
+    padding: 42px 20px 46px 20px;
     border-radius: 15px;
     background-color: #F2F2F2;
     
@@ -285,25 +282,23 @@ main {
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 
 }
 
 .cartes a {
     width: 30%;
-    min-width: 245px;
-    height: 200px;
+    min-width: 200px;
+
     margin-bottom: 30px;
     margin-right: 10px;
-
     text-decoration: none;
     color: black;
 }
 
 .carte-hebergement {
     width: 100%;
-    height: 200px;
-    
     
     background-color: white;
     border-radius: 15px;
@@ -311,9 +306,16 @@ main {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
+.carte-hebergement:hover {
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .img-hebergement {
     width: 100%;
-    height: 60%;
+    height: 126px;
+    
 
     border: solid 5px white;
     border-radius: 15px 15px 0 0;
@@ -321,6 +323,11 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+.img-hebergement img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hebergement h2 {
@@ -390,9 +397,20 @@ main {
 
 }
 
+.populaire-title {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populaire-title img {
+    width: 18px;
+    height: 15.75px;
+}
+
 .populaire a {
     width: 93%;
-    min-width: 280px;
+    min-width: 250px;
 
     margin-top: 24px;
     text-decoration: none;
@@ -418,6 +436,11 @@ main {
     flex-wrap: wrap;
     overflow: hidden;
 }
+
+.carte-populaire:hover {
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
 .img-populaire {
     height: 100%;
     width: 35%;
@@ -428,6 +451,13 @@ main {
     
     overflow: hidden;
 }
+
+.img-populaire img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .item-populaire {
     height: 100%;
 }
@@ -468,7 +498,6 @@ main {
 .activites {
     width: 100%;
 
-    padding: 0 50px 0 50px;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -478,7 +507,7 @@ main {
 .activites a {
     width: 21%;
     
-    max-height: 440px;
+
 
 
     text-decoration: none;
@@ -487,12 +516,16 @@ main {
 
 .carte-activite {
     width: 100%;
-    max-height: 100%;
+
  
     border-radius: 25px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
+}
+
+.carte-activite:hover {
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
 }
 
 .activites h3 {
@@ -503,7 +536,7 @@ main {
 
 .card-img {
     width: 100%;
-    height: 440px;
+
 
     border-bottom: solid 10px white;
     border-radius: 25px;
@@ -511,12 +544,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+
+
     
 }
 
 .carte-activite img {
-    height: 455px;
+    height: 445px;
 }
 
 .activite-description {
@@ -537,8 +571,8 @@ main {
 
 footer {
     max-width: 1440px;
-    padding: 0 50px 0 50px;
-    margin: auto;;
+    padding: 0 30px 0 30px;
+    margin: auto;
     background-color: white;
 
 }
@@ -548,11 +582,16 @@ footer a {
     color: black;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 .footer-content {
     background-color: #F2F2F2;
     padding: 45px 0 50px 70px;
     display: grid;
-    grid-template-columns: 20% 12% 20% 12% 20% 20%;
+    grid-template-columns: 20% 20% 20%;
+    gap: 15%;
 
 }
 
@@ -565,20 +604,15 @@ footer a {
     padding: 0 0 12px 0;
 }
 
-.space-hidden {
-    width: 230px;
-    height: 2px;
-}
-
 .apropos {
     grid-column-start: 1;
 }
 .nos-hebergements {
-    grid-column-start: 3;
+    grid-column-start: 2;
 }
 
 .assistance {
-    grid-column-start: 5;
+    grid-column-start: 3;
 }
 
 
@@ -587,7 +621,7 @@ footer a {
 
     .filtre {
         margin-left: 15px;
-        padding: 5px 15px;
+        padding: 5px 10px;
         border: 2px solid #D9D9D9;
         border-radius: 25px;
     
@@ -612,9 +646,8 @@ footer a {
 
     /*------------content------------*/
 
-    main {
+    .content {
         justify-content: space-between;
-        align-items: flex-start;
         flex-flow: column nowrap;
     }
 
@@ -627,17 +660,24 @@ footer a {
         width: 100%;
 
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
     .populaire a {
         width: 30%;
-        min-width: 250px;
+        max-width: 260px;
         min-height: 145px;
-        margin-right: 0;
+        margin-right: 10px;
+        
         
 
+    }
+
+    .blank {
+        width: 30%;
+        min-width: 250px;
+        height: 1px;
     }
 
     .populaire h3 {
@@ -650,7 +690,7 @@ footer a {
     .activites a {
         width: 21%;
         min-width: 180px;
-        max-height: 265px;
+
 
         margin: 0 10px 30px 0; 
         text-decoration: none;
@@ -659,7 +699,7 @@ footer a {
 
     .card-img {
         width: 100%;
-        max-height: 265px;
+        height: 265px;
     
         border-bottom: solid 10px white;
         border-radius: 25px;
@@ -672,7 +712,9 @@ footer a {
     }
     
     .carte-activite img {
-        max-height: 265px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
@@ -680,13 +722,254 @@ footer a {
 
     .footer-content {
         padding: 45px 0 50px 50px;
-        grid-template-columns: 28% 5% 28% 5% 28% 6%;
+        grid-template-columns: 20% 20% 20%;
+        gap: 15%;
     
     }
 }  
 
 @media screen and (max-width: 768px) {
-    body {
+
+    .nav-bar {
+        margin: 0;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .logo {
+        padding-top: 44px;
+        margin: auto;
+        height: auto;
+
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu a {
+        width: 50%;
+    
+        padding: 48px 0 22px 0;
+    
+        text-align: center;
+    }
+
+
+    .menu a:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid #0065FC;
+        
+    }
+    /*--------Barre de recherche ------------*/
+
+    .barre-recherche form button {
+        width: 50px;
+        height: 96%;
+    
+        display: inline-block;
+        
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 18px;
+        line-height: 1.5;
+        border-radius: 0 15px 15px 0;
+        background-color: #0065FC;
+    
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    } 
+    .barre-recherche form button span {
         display: none;
     }
+    .barre-recherche form button i {
+        display: inline-block;
+    }
+
+
+    /*--------filtres----------*/
+
+    .filtres {    
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    .filtres h3 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .filtre {
+        min-width: 160px;
+        min-height: 50px;
+        margin: 0 10px 15px 0;
+        padding: 3px 10px;
+
+        font-size: 11px;
+
+        justify-content: flex-start;
+    }
+
+    .filtre img {
+        margin-right: 5px;
+    }
+    
+
+    /*-------content -------*/
+
+    main {
+        padding: 0;
+    }
+
+    .recherche {
+        padding: 0 10px 0 10px;
+    }
+
+    .content {
+        width: 100%;
+        
+        margin: 30px 0 0 0;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: flex-end;
+
+        
+    }
+
+    .populaire {
+        width: 100%;
+
+        background-color: #F2F2F2;
+        
+
+        border-radius: 0px;
+    
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+
+    .populaire a {
+        width: 100%;
+        min-width: 250px;
+        max-width: none;
+    
+        margin-top: 24px;
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .hebergement {
+        background-color: white;
+    }
+    
+    
+    .cartes a {
+        max-width: 100%;
+        min-width: 335px;
+    
+        margin-bottom: 15px;
+    }
+
+    .hebergement h2 {
+        margin: 0 0 22px 30px;
+    }
+    
+    
+    
+    .view-more {
+        display: none;
+    }
+    
+
+
+
+    .activites {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        margin: 0px 0 60px 0;
+        padding: 0 30px 0 30px;
+    }
+    
+    .activites a {
+        min-width: 335px;
+        max-height: 200px;
+  
+    
+    
+        text-decoration: none;
+        color: black;
+    }
+    
+    .carte-activite {
+        width: 100%;
+        max-height: 100%;
+     
+        border-radius: 25px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-img {
+        height: 200px;
+    }
+    .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .activites h3 {
+        width: 100%;
+        margin: 0 0 19px 0;
+    }
+
+    .activite-description h3 {
+        margin: 0;
+    }
+
+
+    footer {
+        padding: 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column: 3;
+        gap: 5%;
+    }
+
+    .footer-content ul {
+        margin-bottom: 0;
+    }
+
+    .apropos {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .nos-hebergements {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    
+    .assistance {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    
+    
 }
