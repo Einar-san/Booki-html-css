@@ -60,9 +60,6 @@ header {
     padding: 45px 0 0 0;
 }
 
-.nav-item a:hover ~ .nav-item {
-    
-}
 
 .title {
     margin-bottom: 20px;
@@ -107,7 +104,7 @@ main {
 }
 
 .barre-recherche form {
-    width: auto;
+
     height: 50px;
 
     padding: 0;
@@ -117,8 +114,8 @@ main {
 }
 
 .barre-recherche form label {
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    height: 96%;
 
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
@@ -136,7 +133,7 @@ main {
 }
 
 .barre-recherche form input {
-    width: 218px;
+    min-width: 100px;
     height: 48px;
 
     padding: 0 0 0 17px;
@@ -200,8 +197,7 @@ main {
     line-height: 19.96px;
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 
@@ -458,14 +454,6 @@ main {
     object-fit: cover;
 }
 
-.item-populaire {
-    height: 100%;
-}
-
-.item-populaire-stretch {
-    width: 100%;
-}
-
 .description-populaire {
     width: 65%;
     padding: 16px 0 0 16px;
@@ -493,7 +481,7 @@ main {
 
 
 
-/* activités*/
+/*----------- activités-------------*/
 
 .activites {
     width: 100%;
@@ -537,16 +525,13 @@ main {
 .card-img {
     width: 100%;
 
-
     border-bottom: solid 10px white;
     border-radius: 25px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    
+    overflow: hidden;
 }
 
 .carte-activite img {
@@ -621,21 +606,13 @@ footer a:hover {
 
     .filtre {
         margin-left: 15px;
-        padding: 5px 10px;
+        padding: 7px 10px;
         border: 2px solid #D9D9D9;
         border-radius: 25px;
     
         font-weight: 700;
         font-size: 14px;
         line-height: 19.96px;
-    
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    
-        cursor: pointer;
     }
 
     .filtre img {
@@ -669,9 +646,6 @@ footer a:hover {
         max-width: 260px;
         min-height: 145px;
         margin-right: 10px;
-        
-        
-
     }
 
     .blank {
@@ -702,13 +676,7 @@ footer a:hover {
         height: 265px;
     
         border-bottom: solid 10px white;
-        border-radius: 25px;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        
+        border-radius: 25px;        
     }
     
     .carte-activite img {
@@ -739,9 +707,6 @@ footer a:hover {
 
     .logo {
         padding-top: 44px;
-        margin: auto;
-        height: auto;
-
     }
 
     .menu {
@@ -768,22 +733,6 @@ footer a:hover {
     .barre-recherche form button {
         width: 50px;
         height: 96%;
-    
-        display: inline-block;
-        
-        white-space: nowrap;
-        vertical-align: middle;
-        user-select: none;
-        border: 1px solid transparent;
-        padding: .375rem .75rem;
-        font-size: 18px;
-        line-height: 1.5;
-        border-radius: 0 15px 15px 0;
-        background-color: #0065FC;
-    
-        font-weight: 700;
-        text-align: center;
-        color: white;
     } 
     .barre-recherche form button span {
         display: none;
@@ -796,7 +745,8 @@ footer a:hover {
     /*--------filtres----------*/
 
     .filtres {    
-        justify-content: space-between;
+        justify-content: space-around;
+        
         flex-flow: row wrap;
     }
 
@@ -807,9 +757,9 @@ footer a:hover {
     
     .filtre {
         min-width: 160px;
-        min-height: 50px;
-        margin: 0 10px 15px 0;
-        padding: 3px 10px;
+
+        margin: 0 0 10px 0;
+        padding: 10px 10px;
 
         font-size: 11px;
 
@@ -820,6 +770,9 @@ footer a:hover {
         margin-right: 5px;
     }
     
+    .result {
+        font-size: 1em;
+    }
 
     /*-------content -------*/
 
@@ -838,8 +791,6 @@ footer a:hover {
         display: flex;
         flex-flow: column-reverse wrap;
         align-items: flex-end;
-
-        
     }
 
     .populaire {
@@ -847,7 +798,6 @@ footer a:hover {
 
         background-color: #F2F2F2;
         
-
         border-radius: 0px;
     
         display: flex;
@@ -874,7 +824,6 @@ footer a:hover {
     
     
     .cartes a {
-        max-width: 100%;
         min-width: 335px;
     
         margin-bottom: 15px;
@@ -900,14 +849,11 @@ footer a:hover {
         justify-content: space-around;
         flex-flow: row wrap;
         margin: 0px 0 60px 0;
-        padding: 0 30px 0 30px;
+        padding: 0 20px 0 20px;
     }
     
     .activites a {
         min-width: 335px;
-        max-height: 200px;
-  
-    
     
         text-decoration: none;
         color: black;
@@ -915,8 +861,7 @@ footer a:hover {
     
     .carte-activite {
         width: 100%;
-        max-height: 100%;
-     
+
         border-radius: 25px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
         overflow: hidden;
@@ -926,6 +871,7 @@ footer a:hover {
     .card-img {
         height: 200px;
     }
+
     .card-img img {
         width: 100%;
         height: 100%;
