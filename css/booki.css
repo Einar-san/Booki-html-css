@@ -14,7 +14,7 @@ body {
 /* header */
 
 header {
-    max-width: 1440px;
+    max-width: 1400px;
     background-color: white;
     
     margin: auto;
@@ -29,9 +29,12 @@ header {
 }
 
 .logo {
-    padding-top: 44px;
-    width: 61px;
-    height: 29px;
+    padding-top: 35px;
+}
+
+.logo img {
+    width: 73px;
+    height: 35px;
 }
 
 .menu {
@@ -85,7 +88,7 @@ header {
 /* --------main---------- */
 
 main {
-    max-width: 1440px; /* la maquette fait 1440px de largeur*/
+    max-width: 1400px; /* la maquette fait 1440px de largeur*/
     margin: auto;
     padding: 30px 30px 0 30px;
 
@@ -209,8 +212,9 @@ main {
     
 }
 
-.filtre img {
+.filtre i {
     margin-right: 10px;
+    color: #0065FC;
 }
 
 
@@ -262,15 +266,9 @@ main {
 .hebergement {
     width: 65%;
     
-    padding: 42px 20px 46px 20px;
+    padding: 42px 20px 35px 20px;
     border-radius: 15px;
-    background-color: #F2F2F2;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
- 
-    
+    background-color: #F2F2F2; 
 }
 
 .cartes {
@@ -303,7 +301,7 @@ main {
 }
 
 .carte-hebergement:hover {
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -328,7 +326,7 @@ main {
 
 .hebergement h2 {
     width: 93%;
-    margin: 0 0 22px 0;
+    margin: 0 0 22px 10px;
 }
 
 
@@ -336,6 +334,7 @@ main {
 .view-more {
     width: 100%;
     cursor: pointer;
+    margin: 0 0 0 10px;
 
 }
 
@@ -368,12 +367,23 @@ main {
 }
 
 .description p {
-    
     margin-bottom: 8px;
+
 }
 
 .score {
     padding: 0px 10px 0px 10px;
+    margin-bottom: 8px;
+
+}
+
+.good-score {
+    color: #0065FC;
+}
+
+
+.bad-score{
+    color: #D9D9D9;
 }
 
 /* ---------- Les plus populaires--------------*/
@@ -385,12 +395,13 @@ main {
     
     padding: 42px 20px 45px 20px;
     border-radius: 15px;
+}
 
+.flex-populaire {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .populaire-title {
@@ -399,9 +410,8 @@ main {
     justify-content: space-between;
 }
 
-.populaire-title img {
-    width: 18px;
-    height: 15.75px;
+.populaire-title i {
+    color: #0065FC;
 }
 
 .populaire a {
@@ -434,7 +444,7 @@ main {
 }
 
 .carte-populaire:hover {
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .img-populaire {
@@ -513,7 +523,7 @@ main {
 }
 
 .carte-activite:hover {
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .activites h3 {
@@ -555,7 +565,7 @@ main {
 }
 
 footer {
-    max-width: 1440px;
+    max-width: 1400px;
     padding: 0 30px 0 30px;
     margin: auto;
     background-color: white;
@@ -633,9 +643,15 @@ footer a:hover {
         margin-bottom: 50px;
     }
 
+    /*---------populaire tablette---------*/
+
     .populaire {
         width: 100%;
 
+        
+    }
+
+    .flex-populaire {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
@@ -730,6 +746,11 @@ footer a:hover {
     }
     /*--------Barre de recherche ------------*/
 
+    .barre-recherche form {
+        display: flex;
+        justify-content: center;
+    }
+
     .barre-recherche form button {
         width: 50px;
         height: 96%;
@@ -756,12 +777,12 @@ footer a:hover {
     }
     
     .filtre {
-        min-width: 160px;
+        min-width: 185px;
 
         margin: 0 0 10px 0;
         padding: 10px 10px;
 
-        font-size: 11px;
+        font-size: 14px;
 
         justify-content: flex-start;
     }
@@ -799,22 +820,14 @@ footer a:hover {
         background-color: #F2F2F2;
         
         border-radius: 0px;
-    
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
-    
     }
 
     .populaire a {
         width: 100%;
         min-width: 250px;
         max-width: none;
-    
-        margin-top: 24px;
-        text-decoration: none;
-        color: black;
+
+        margin-right: 0;
     }
 
 
@@ -824,9 +837,10 @@ footer a:hover {
     
     
     .cartes a {
-        min-width: 335px;
+        min-width: 280px;
     
         margin-bottom: 15px;
+        margin-right: 0;
     }
 
     .hebergement h2 {
@@ -839,9 +853,6 @@ footer a:hover {
         display: none;
     }
     
-
-
-
     .activites {
         width: 100%;
 
@@ -853,8 +864,9 @@ footer a:hover {
     }
     
     .activites a {
-        min-width: 335px;
+        min-width: 280px;
     
+        margin-right: 0;
         text-decoration: none;
         color: black;
     }
