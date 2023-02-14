@@ -186,7 +186,7 @@ main {
 
 .filtre {
     margin-left: 30px;
-    padding: 7px 20px;
+    padding: 13px 20px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
 
@@ -613,10 +613,13 @@ footer a:hover {
 
 @media screen and (max-width: 992px) {
 
+    .filtres {
+        justify-content: space-between;
+    }
 
     .filtre {
         margin-left: 15px;
-        padding: 7px 10px;
+        padding: 10px 10px;
         border: 2px solid #D9D9D9;
         border-radius: 25px;
     
