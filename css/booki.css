@@ -758,6 +758,9 @@ footer a:hover {
     main {
         padding: 0;
     }
+    .recherche {
+        padding: 0 20px 0 20px;
+    }
 
     .title {
         width: fit-content;
@@ -772,14 +775,10 @@ footer a:hover {
     .title h1 {
         display: inline-block;
         width: 100%;
-        text-align: center;
-        padding: 0 10px 0 10px;
     }
     .title p {
         display: inline-block;
         width: 100%;
-        text-align: center;
-        padding: 0 10px 0 10px;
     }
 
     .recherche h1 {
@@ -791,9 +790,8 @@ footer a:hover {
 
     .barre-recherche form {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         margin-bottom: 20px;
-        padding: 0 10px 0 10px;
     }
 
     .barre-recherche form button {
@@ -810,22 +808,22 @@ footer a:hover {
 /*--------filtres----------*/
 
     .filtres {    
-        justify-content: space-around;
-        padding: 0;
+        justify-content: flex-start;
+
         margin: 0;
         flex-flow: row wrap;
+        gap: 4%;
     }
 
     .filtres h3 {
         width: 100%;
         margin-bottom: 15px;
-        padding: 0 10px 0 10px;
     }
 
     .filtre {
-        min-width: 150px;
+        width: 48%;
 
-        margin: 0;
+        margin: 0 0 0 0px;
         margin-bottom: 10px;
         padding: 10px 0 10px 10px;
 
@@ -836,10 +834,6 @@ footer a:hover {
 
     .filtre i {
         margin-right: 5px;
-    }
-
-    .result {
-        padding: 0 10px 0 10px;
     }
 
     .result p {
@@ -868,7 +862,6 @@ footer a:hover {
 
     .populaire a {
         width: 100%;
-        min-width: 250px;
         max-width: none;
 
         margin-right: 0;
@@ -887,7 +880,7 @@ footer a:hover {
     
     
     .cartes a {
-        min-width: 280px;
+        width: 100%;
     
         margin-bottom: 15px;
         margin-right: 0;
@@ -895,8 +888,7 @@ footer a:hover {
 
     .hebergement h2 {
         width: fit-content;
-        margin: auto;
-        margin-bottom: 22px;
+        margin:0 0 22px 0;
         font-size: 22px;
     }
     
@@ -917,13 +909,13 @@ footer a:hover {
 
     #activite {
         margin-top: 0;
+        padding:0 20px 0 20px;
     }
-    #activite h2 {
-        margin: auto;
-    }
+
     
     .activites a {
-        min-width: 280px;
+        width: 100%;
+
     
         margin-right: 0;
         text-decoration: none;
@@ -961,13 +953,12 @@ footer a:hover {
 
     footer {
         padding: 0;
-        display: flex;
-        justify-content: center;
         background-color: #F2F2F2;
     }
 
     .footer-content {
-        padding-left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr;
         grid-column: 3;
