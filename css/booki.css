@@ -185,6 +185,7 @@ main {
 }
 
 .filtre {
+    height: 50px;
     margin-left: 30px;
     padding: 13px 20px;
     border: 2px solid #D9D9D9;
@@ -613,9 +614,7 @@ footer a:hover {
 
 @media screen and (max-width: 992px) {
 
-    .filtres {
-        justify-content: space-between;
-    }
+   
 
     .filtre {
         margin-left: 15px;
@@ -822,13 +821,15 @@ footer a:hover {
 
     .filtre {
         width: 48%;
+        height: 50px;
+        line-height: 1;
 
         margin: 0 0 0 0px;
         margin-bottom: 10px;
-        padding: 10px 0 10px 10px;
+
 
         font-size: 11px;
-
+        overflow: hidden;
         justify-content: flex-start;
     }
 
