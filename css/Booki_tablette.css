@@ -24,8 +24,6 @@
 
     .populaire {
         width: 100%;
-
-        
     }
 
     .flex-populaire {
@@ -38,10 +36,6 @@
     .populaire a {
         width: 30%;
         height: auto;
-    }
-
-    .populaire h3 {
-        width: 100%;
     }
 
 /*-------Activités---------*/

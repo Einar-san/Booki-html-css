@@ -63,7 +63,7 @@ header {
 /* --------main---------- */
 
 main {
-    max-width: 1400px; /* la maquette fait 1440px de largeur*/
+    max-width: 1400px; 
     margin: auto;
     padding: 30px 30px 0 30px;
 
