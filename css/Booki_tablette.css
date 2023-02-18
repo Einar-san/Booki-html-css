@@ -1,0 +1,59 @@
+@media screen and (max-width: 992px) {
+
+   
+
+    .filtre {
+        margin-left: 15px;
+        padding: 10px 10px;
+
+        font-size: 14px;
+    }
+
+    /*------------content------------*/
+
+    .content {
+        flex-flow: column nowrap;
+    }
+
+    .hebergement {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /*---------populaire tablette---------*/
+
+    .populaire {
+        width: 100%;
+
+        
+    }
+
+    .flex-populaire {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: 1%;
+
+    }
+
+    .populaire a {
+        width: 30%;
+        height: auto;
+    }
+
+    .populaire h3 {
+        width: 100%;
+    }
+
+/*-------Activités---------*/
+
+
+    .activite-img {
+        height: 265px;     
+    }
+
+/*-------footer -----------*/
+
+    .footer-content {
+        padding: 45px 0 50px 50px;    
+    }
+}  
