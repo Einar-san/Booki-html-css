@@ -614,4 +614,5 @@ footer a:hover {
     grid-column-start: 3;
 }
 
-
+@import url("Booki_tablette.css")
+@import url("Booki_mobile.css")
